@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions name="TblDataService" targetNamespace="http://www.teessidebasketball.co.uk" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.teessidebasketball.co.uk" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:binding name="BasicHttpBinding_ITblDataService" type="i0:ITblDataService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNews">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetNews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestMatchResults">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetLatestMatchResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchResult">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetMatchResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixturesFiltered">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetFixturesFiltered" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsForCurrentSeason">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsForCurrentSeason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsNamesForCurrentSeason">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsNamesForCurrentSeason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingsForCurrentSeason">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetStandingsForCurrentSeason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeam">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlayerStats">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/GetAllPlayerStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestError">
+      <soap:operation soapAction="http://www.teessidebasketball.co.uk/ITblDataService/TestError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:types />
+  <wsdl:service name="TblDataService">
+    <wsdl:port name="BasicHttpBinding_ITblDataService" binding="i0:BasicHttpBinding_ITblDataService">
+      <soap:address location="http://data.teessidebasketball.co.uk/TblDataService.svc/TblDataService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:portType name="ITblDataService">
+    <wsdl:operation name="GetNews">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetNews" message="tns:ITblDataService_GetNews_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetNewsResponse" message="tns:ITblDataService_GetNews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestMatchResults">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetLatestMatchResults" message="tns:ITblDataService_GetLatestMatchResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetLatestMatchResultsResponse" message="tns:ITblDataService_GetLatestMatchResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchResult">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetMatchResult" message="tns:ITblDataService_GetMatchResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetMatchResultResponse" message="tns:ITblDataService_GetMatchResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixturesFiltered">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetFixturesFiltered" message="tns:ITblDataService_GetFixturesFiltered_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetFixturesFilteredResponse" message="tns:ITblDataService_GetFixturesFiltered_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsForCurrentSeason">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsForCurrentSeason" message="tns:ITblDataService_GetTeamsForCurrentSeason_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsForCurrentSeasonResponse" message="tns:ITblDataService_GetTeamsForCurrentSeason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsNamesForCurrentSeason">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsNamesForCurrentSeason" message="tns:ITblDataService_GetTeamsNamesForCurrentSeason_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsNamesForCurrentSeasonResponse" message="tns:ITblDataService_GetTeamsNamesForCurrentSeason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingsForCurrentSeason">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetStandingsForCurrentSeason" message="tns:ITblDataService_GetStandingsForCurrentSeason_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetStandingsForCurrentSeasonResponse" message="tns:ITblDataService_GetStandingsForCurrentSeason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeam">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeam" message="tns:ITblDataService_GetTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamResponse" message="tns:ITblDataService_GetTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlayerStats">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetAllPlayerStats" message="tns:ITblDataService_GetAllPlayerStats_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetAllPlayerStatsResponse" message="tns:ITblDataService_GetAllPlayerStats_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestError">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/TestError" message="tns:ITblDataService_TestError_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/TestErrorResponse" message="tns:ITblDataService_TestError_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:message name="ITblDataService_TestError_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_TestError_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestError" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetAllPlayerStats_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayerStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetAllPlayerStats_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayerStats" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeam" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetStandingsForCurrentSeason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingsForCurrentSeasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetStandingsForCurrentSeason_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingsForCurrentSeason" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsNamesForCurrentSeason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsNamesForCurrentSeasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsNamesForCurrentSeason_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsNamesForCurrentSeason" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsForCurrentSeason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsForCurrentSeasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsForCurrentSeason_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsForCurrentSeason" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetFixturesFiltered_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixturesFilteredResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetFixturesFiltered_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixturesFiltered" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetMatchResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMatchResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetMatchResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMatchResult" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetLatestMatchResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestMatchResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetLatestMatchResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestMatchResults" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetNews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetNews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNews" />
+  </wsdl:message>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.teessidebasketball.co.uk/Imports">
+      <xsd:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd0" namespace="http://www.teessidebasketball.co.uk" />
+      <xsd:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Basketball.Domain.Entities" />
+      <xsd:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Basketball.Common.Domain" />
+      <xsd:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:import namespace="http://tempuri.org/" location="http://data.teessidebasketball.co.uk/TblDataService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.teessidebasketball.co.uk/Imports">
+      <xs:element name="TestErrorResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TestError" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetAllPlayerStatsResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetAllPlayerStatsResult" nillable="true" type="q9:PlayerStatsDto" xmlns:q9="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetAllPlayerStats" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTeamResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetTeamResult" nillable="true" type="q8:Team" xmlns:q8="http://schemas.datacontract.org/2004/07/Basketball.Domain.Entities" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTeam" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="id" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStandingsForCurrentSeasonResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetStandingsForCurrentSeasonResult" nillable="true" type="q7:LeagueStandingsDto" xmlns:q7="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetStandingsForCurrentSeason" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTeamsNamesForCurrentSeasonResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetTeamsNamesForCurrentSeasonResult" nillable="true" type="q6:ArrayOfTeamNameDto" xmlns:q6="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTeamsNamesForCurrentSeason" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTeamsForCurrentSeasonResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetTeamsForCurrentSeasonResult" nillable="true" type="q5:ArrayOfTeam" xmlns:q5="http://schemas.datacontract.org/2004/07/Basketball.Domain.Entities" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTeamsForCurrentSeason" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetFixturesFilteredResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetFixturesFilteredResult" nillable="true" type="q4:ArrayOfFixtureDto" xmlns:q4="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetFixturesFiltered" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="teamId" type="xs:int" />
+            <xs:element minOccurs="0" name="isPlayed" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMatchResultResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetMatchResultResult" nillable="true" type="q3:MatchResultDto" xmlns:q3="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetMatchResult" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="fixtureId" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetLatestMatchResultsResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetLatestMatchResultsResult" nillable="true" type="q2:ArrayOfFixtureDto" xmlns:q2="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetLatestMatchResults" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="numberOfMatchResults" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNewsResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="GetNewsResult" nillable="true" type="q1:ArrayOfNews" xmlns:q1="http://schemas.datacontract.org/2004/07/Basketball.Domain.Entities" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetNews" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="numberOfArticles" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Basketball.WebService.DataTransferObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Basketball.Domain.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:attribute name="Ref" type="xs:IDREF" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:attribute name="Id" type="xs:ID" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:attribute name="FactoryType" type="xs:QName" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:simpleType name="guid" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:simpleType name="duration" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:simpleType name="char" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="char" nillable="true" type="tns:char" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="string" nillable="true" type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="short" nillable="true" type="xs:short" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="QName" nillable="true" type="xs:QName" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="long" nillable="true" type="xs:long" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="int" nillable="true" type="xs:int" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="float" nillable="true" type="xs:float" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="double" nillable="true" type="xs:double" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="byte" nillable="true" type="xs:byte" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="anyType" nillable="true" type="xs:anyType" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="Player" nillable="true" type="tns:Player" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="Player" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexContent mixed="false">
+          <xs:extension base="q4:Entity" xmlns:q4="http://schemas.datacontract.org/2004/07/Basketball.Common.Domain">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Forename" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="HeightFeet" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="HeightInches" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Team" nillable="true" type="tns:Team" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="DayOfWeek" nillable="true" type="tns:DayOfWeek" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="DayOfWeek" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexContent mixed="false">
+          <xs:extension base="q3:Entity" xmlns:q3="http://schemas.datacontract.org/2004/07/Basketball.Common.Domain">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Day" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="Team" nillable="true" type="tns:Team" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="Team" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexContent mixed="false">
+          <xs:extension base="q2:Entity" xmlns:q2="http://schemas.datacontract.org/2004/07/Basketball.Common.Domain">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="AddressCounty" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="AddressLine3" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="AddressPostCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="AddressTown" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="GameDay" nillable="true" type="tns:DayOfWeek" />
+              <xs:element minOccurs="0" name="StripColour1" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="StripColour2" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamContact1ContactNumber1" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamContact1ContactNumber2" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamContact1Email" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamContact1Forename" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamContact1Surname" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamName" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TeamNameLong" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="TipOffTime" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="Venue" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="WebSiteUrl" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ArrayOfTeam" nillable="true" type="tns:ArrayOfTeam" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfTeam" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Team" nillable="true" type="tns:Team" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="News" nillable="true" type="tns:News" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="News" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:complexContent mixed="false">
+          <xs:extension base="q1:Entity" xmlns:q1="http://schemas.datacontract.org/2004/07/Basketball.Common.Domain">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="NewsDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ArrayOfNews" nillable="true" type="tns:ArrayOfNews" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfNews" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="News" nillable="true" type="tns:News" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Basketball.Common.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:element name="Entity" nillable="true" type="tns:Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="PlayerSeasonFixtureStatsDto" nillable="true" type="tns:PlayerSeasonFixtureStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="PlayerSeasonFixtureStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CurrentTeam" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FixtureDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Fouls" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsMvp" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OpponentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Points" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfPlayerSeasonFixtureStatsDto" nillable="true" type="tns:ArrayOfPlayerSeasonFixtureStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfPlayerSeasonFixtureStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="PlayerSeasonFixtureStatsDto" nillable="true" type="tns:PlayerSeasonFixtureStatsDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="PlayerCareerStatsDto" nillable="true" type="tns:PlayerCareerStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="PlayerCareerStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Fouls" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FoulsPerGame" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Games" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MvpAwards" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Points" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PointsPerGame" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Year" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfPlayerCareerStatsDto" nillable="true" type="tns:ArrayOfPlayerCareerStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfPlayerCareerStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="PlayerCareerStatsDto" nillable="true" type="tns:PlayerCareerStatsDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="PlayerStatsDto" nillable="true" type="tns:PlayerStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="PlayerStatsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CareerStats" nillable="true" type="tns:ArrayOfPlayerCareerStatsDto" />
+          <xs:element minOccurs="0" name="CurrentSeasonFixtureStats" nillable="true" type="tns:ArrayOfPlayerSeasonFixtureStatsDto" />
+          <xs:element minOccurs="0" name="Player" nillable="true" type="q1:Player" xmlns:q1="http://schemas.datacontract.org/2004/07/Basketball.Domain.Entities" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="TeamLeagueDto" nillable="true" type="tns:TeamLeagueDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="TeamLeagueDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GamesLost" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GamesPct" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GamesPlayed" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GamesWon" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PointsLeague" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TeamId" type="xs:int" />
+          <xs:element minOccurs="0" name="TeamName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfTeamLeagueDto" nillable="true" type="tns:ArrayOfTeamLeagueDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfTeamLeagueDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="TeamLeagueDto" nillable="true" type="tns:TeamLeagueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="DivisionStandingsDto" nillable="true" type="tns:DivisionStandingsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="DivisionStandingsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Standings" nillable="true" type="tns:ArrayOfTeamLeagueDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfDivisionStandingsDto" nillable="true" type="tns:ArrayOfDivisionStandingsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfDivisionStandingsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="DivisionStandingsDto" nillable="true" type="tns:DivisionStandingsDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="LeagueStandingsDto" nillable="true" type="tns:LeagueStandingsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="LeagueStandingsDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DivisionStandings" nillable="true" type="tns:ArrayOfDivisionStandingsDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="TeamNameDto" nillable="true" type="tns:TeamNameDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="TeamNameDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TeamId" type="xs:int" />
+          <xs:element minOccurs="0" name="TeamName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfTeamNameDto" nillable="true" type="tns:ArrayOfTeamNameDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfTeamNameDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="TeamNameDto" nillable="true" type="tns:TeamNameDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="PlayerFixtureDto" nillable="true" type="tns:PlayerFixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="PlayerFixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FixtureId" type="xs:int" />
+          <xs:element minOccurs="0" name="Forename" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Fouls" type="xs:int" />
+          <xs:element minOccurs="0" name="IsMvp" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PlayerId" type="xs:int" />
+          <xs:element minOccurs="0" name="Points" type="xs:int" />
+          <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfPlayerFixtureDto" nillable="true" type="tns:ArrayOfPlayerFixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfPlayerFixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="PlayerFixtureDto" nillable="true" type="tns:PlayerFixtureDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="MatchResultDto" nillable="true" type="tns:MatchResultDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="MatchResultDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AwayPlayerStats" nillable="true" type="tns:ArrayOfPlayerFixtureDto" />
+          <xs:element minOccurs="0" name="Fixture" nillable="true" type="tns:FixtureDto" />
+          <xs:element minOccurs="0" name="HomePlayerStats" nillable="true" type="tns:ArrayOfPlayerFixtureDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FixtureDto" nillable="true" type="tns:FixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="FixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AwayTeamName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AwayTeamScore" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FixtureDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FixtureId" type="xs:int" />
+          <xs:element minOccurs="0" name="HomeTeamName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HomeTeamScore" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsCancelled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPlayed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Report" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TipOffTime" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfFixtureDto" nillable="true" type="tns:ArrayOfFixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+      <xs:complexType name="ArrayOfFixtureDto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="FixtureDto" nillable="true" type="tns:FixtureDto" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:import schemaLocation="http://data.teessidebasketball.co.uk/TblDataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Basketball.Domain.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITblDataService_GetNews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNews" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetNews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetLatestMatchResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestMatchResults" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetLatestMatchResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatestMatchResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetMatchResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMatchResult" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetMatchResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMatchResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetFixturesFiltered_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixturesFiltered" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetFixturesFiltered_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFixturesFilteredResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsForCurrentSeason_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsForCurrentSeason" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsForCurrentSeason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsForCurrentSeasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsNamesForCurrentSeason_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsNamesForCurrentSeason" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeamsNamesForCurrentSeason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsNamesForCurrentSeasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetStandingsForCurrentSeason_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingsForCurrentSeason" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetStandingsForCurrentSeason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStandingsForCurrentSeasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeam" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetAllPlayerStats_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayerStats" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_GetAllPlayerStats_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayerStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_TestError_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestError" />
+  </wsdl:message>
+  <wsdl:message name="ITblDataService_TestError_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestErrorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITblDataService">
+    <wsdl:operation name="GetNews">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetNews" message="tns:ITblDataService_GetNews_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetNewsResponse" message="tns:ITblDataService_GetNews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestMatchResults">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetLatestMatchResults" message="tns:ITblDataService_GetLatestMatchResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetLatestMatchResultsResponse" message="tns:ITblDataService_GetLatestMatchResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchResult">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetMatchResult" message="tns:ITblDataService_GetMatchResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetMatchResultResponse" message="tns:ITblDataService_GetMatchResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixturesFiltered">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetFixturesFiltered" message="tns:ITblDataService_GetFixturesFiltered_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetFixturesFilteredResponse" message="tns:ITblDataService_GetFixturesFiltered_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsForCurrentSeason">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsForCurrentSeason" message="tns:ITblDataService_GetTeamsForCurrentSeason_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsForCurrentSeasonResponse" message="tns:ITblDataService_GetTeamsForCurrentSeason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsNamesForCurrentSeason">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsNamesForCurrentSeason" message="tns:ITblDataService_GetTeamsNamesForCurrentSeason_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamsNamesForCurrentSeasonResponse" message="tns:ITblDataService_GetTeamsNamesForCurrentSeason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStandingsForCurrentSeason">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetStandingsForCurrentSeason" message="tns:ITblDataService_GetStandingsForCurrentSeason_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetStandingsForCurrentSeasonResponse" message="tns:ITblDataService_GetStandingsForCurrentSeason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeam">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeam" message="tns:ITblDataService_GetTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetTeamResponse" message="tns:ITblDataService_GetTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlayerStats">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetAllPlayerStats" message="tns:ITblDataService_GetAllPlayerStats_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/GetAllPlayerStatsResponse" message="tns:ITblDataService_GetAllPlayerStats_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestError">
+      <wsdl:input wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/TestError" message="tns:ITblDataService_TestError_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.teessidebasketball.co.uk/ITblDataService/TestErrorResponse" message="tns:ITblDataService_TestError_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="TblDataService">
+    <wsdl:port name="BasicHttpBinding_ITblDataService" binding="i0:BasicHttpBinding_ITblDataService">
+      <soap:address location="http://data.teessidebasketball.co.uk/TblDataService.svc/TblDataService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

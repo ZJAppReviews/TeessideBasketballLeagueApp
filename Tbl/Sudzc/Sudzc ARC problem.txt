@@ -1,0 +1,7 @@
+http://code.google.com/p/sudzc/issues/detail?id=40
+
+if([child respondsToSelector:@selector(name)] && [[child name] isEqual: name]) {
+
+
+if([child respondsToSelector:@selector(name)] && [[child name] hasSuffix: name]) {
+	

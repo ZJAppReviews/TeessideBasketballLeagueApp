@@ -1,0 +1,55 @@
+<html><head><title>TblTblDataService</title><link rel="stylesheet" type="text/css" href="../assets/styles/default.css" /><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script><script type="text/javascript" src="../assets/scripts/base.js"></script></head><body id="content"><h1>TblTblDataService Class Reference</h1><p>The implementation classes and methods for the TblDataService web service.</p><p>Inherits from <a href="../framework/SoapService.html">SoapService</a>.</p><h2>Properties</h2><h2>Instance Methods</h2><h3 id="GetAllPlayerStats:id:&#xD;&#xA;	">GetAllPlayerStats:id:
+	</h3><p>
+			Returns <a href="TblPlayerStatsDto.html">TblPlayerStatsDto*</a> to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetAllPlayerStats: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler id: (int) <em>_id</em></code><h3 id="GetAllPlayerStats:action:id:&#xD;&#xA;	">GetAllPlayerStats:action:id:
+	</h3><p>
+			Returns <a href="TblPlayerStatsDto.html">TblPlayerStatsDto*</a> to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetAllPlayerStats: (id) target action: (SEL) action id: (int) <em>_id</em>;</code><h3 id="GetFixturesFiltered:teamId:&#xD;&#xA;	isPlayed:&#xD;&#xA;	">GetFixturesFiltered:teamId:
+	isPlayed:
+	</h3><p>
+			Returns NSMutableArray* to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetFixturesFiltered: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler teamId: (int) <em>teamId</em> isPlayed: (NSString*) <em>isPlayed</em></code><h3 id="GetFixturesFiltered:action:teamId:&#xD;&#xA;	isPlayed:&#xD;&#xA;	">GetFixturesFiltered:action:teamId:
+	isPlayed:
+	</h3><p>
+			Returns NSMutableArray* to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetFixturesFiltered: (id) target action: (SEL) action teamId: (int) <em>teamId</em> isPlayed: (NSString*) <em>isPlayed</em>;</code><h3 id="GetLatestMatchResults:numberOfMatchResults:&#xD;&#xA;	">GetLatestMatchResults:numberOfMatchResults:
+	</h3><p>
+			Returns NSMutableArray* to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetLatestMatchResults: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler numberOfMatchResults: (int) <em>numberOfMatchResults</em></code><h3 id="GetLatestMatchResults:action:numberOfMatchResults:&#xD;&#xA;	">GetLatestMatchResults:action:numberOfMatchResults:
+	</h3><p>
+			Returns NSMutableArray* to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetLatestMatchResults: (id) target action: (SEL) action numberOfMatchResults: (int) <em>numberOfMatchResults</em>;</code><h3 id="GetMatchResult:fixtureId:&#xD;&#xA;	">GetMatchResult:fixtureId:
+	</h3><p>
+			Returns <a href="TblMatchResultDto.html">TblMatchResultDto*</a> to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetMatchResult: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler fixtureId: (int) <em>fixtureId</em></code><h3 id="GetMatchResult:action:fixtureId:&#xD;&#xA;	">GetMatchResult:action:fixtureId:
+	</h3><p>
+			Returns <a href="TblMatchResultDto.html">TblMatchResultDto*</a> to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetMatchResult: (id) target action: (SEL) action fixtureId: (int) <em>fixtureId</em>;</code><h3 id="GetNews:numberOfArticles:&#xD;&#xA;	">GetNews:numberOfArticles:
+	</h3><p>
+			Returns NSMutableArray* to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetNews: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler numberOfArticles: (int) <em>numberOfArticles</em></code><h3 id="GetNews:action:numberOfArticles:&#xD;&#xA;	">GetNews:action:numberOfArticles:
+	</h3><p>
+			Returns NSMutableArray* to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetNews: (id) target action: (SEL) action numberOfArticles: (int) <em>numberOfArticles</em>;</code><h3 id="GetStandingsForCurrentSeason:">GetStandingsForCurrentSeason:</h3><p>
+			Returns <a href="TblLeagueStandingsDto.html">TblLeagueStandingsDto*</a> to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetStandingsForCurrentSeason: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler</code><h3 id="GetStandingsForCurrentSeason:action:">GetStandingsForCurrentSeason:action:</h3><p>
+			Returns <a href="TblLeagueStandingsDto.html">TblLeagueStandingsDto*</a> to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetStandingsForCurrentSeason: (id) target action: (SEL) action;</code><h3 id="GetTeam:id:&#xD;&#xA;	">GetTeam:id:
+	</h3><p>
+			Returns <a href="TblTeam.html">TblTeam*</a> to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetTeam: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler id: (int) <em>_id</em></code><h3 id="GetTeam:action:id:&#xD;&#xA;	">GetTeam:action:id:
+	</h3><p>
+			Returns <a href="TblTeam.html">TblTeam*</a> to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetTeam: (id) target action: (SEL) action id: (int) <em>_id</em>;</code><h3 id="GetTeamsForCurrentSeason:">GetTeamsForCurrentSeason:</h3><p>
+			Returns NSMutableArray* to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetTeamsForCurrentSeason: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler</code><h3 id="GetTeamsForCurrentSeason:action:">GetTeamsForCurrentSeason:action:</h3><p>
+			Returns NSMutableArray* to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetTeamsForCurrentSeason: (id) target action: (SEL) action;</code><h3 id="GetTeamsNamesForCurrentSeason:">GetTeamsNamesForCurrentSeason:</h3><p>
+			Returns NSMutableArray* to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetTeamsNamesForCurrentSeason: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler</code><h3 id="GetTeamsNamesForCurrentSeason:action:">GetTeamsNamesForCurrentSeason:action:</h3><p>
+			Returns NSMutableArray* to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) GetTeamsNamesForCurrentSeason: (id) target action: (SEL) action;</code><h3 id="TestError:">TestError:</h3><p>
+			Returns id to the designated <a href="../framework/SoapDelegate.html">SoapDelegate</a>.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) TestError: (id &lt;<a href="../framework/SoapDelegate.html">SoapDelegate</a>&gt;) handler</code><h3 id="TestError:action:">TestError:action:</h3><p>
+			Returns id to the specified target/action receiver.
+		</p><code>- (<a href="../framework/SoapRequest.html">SoapRequest*</a>) TestError: (id) target action: (SEL) action;</code><div id="footer">Documentation generated by <a href="http://sudzc.com" target="_blank">SudzC</a>.</div></body></html>
